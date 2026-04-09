@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@import "tailwindcss";
+
+@theme {
+    --color-brand-orange: #fec473;
+    --color-brand-dark: #ff6a2d;
+    --color-brand-btn: #ffac48;
+
+    --font-google: "Montserrat", sans-serif;
+}
+
+@layer base {
+    body {
+        @apply font-google bg-brand-orange;
+    }
+}
