@@ -27,14 +27,12 @@ const UserAppScreensSection: React.FC<AppScreensProps> = ({
             <div className="container mx-auto px-4 md:px-8 lg:px-12 w-full">
                 <div className="bg-[#e9ecef] rounded-[3rem] md:rounded-[5rem] p-8 md:p-16 lg:p-24 shadow-inner">
 
-                    {/* التعديل الجوهري هنا: استبدلنا grid بـ flex مع justify-center */}
                     <div className="flex flex-wrap justify-center gap-8 md:gap-x-12 lg:gap-x-16 gap-y-12 items-start">
                         {images.map((imgUrl, index) => {
                             const currentId = index + 1;
                             const isStaggered = currentId >= startStaggeredFrom;
 
-                            // بما أننا نوزع العناصر كـ Flex، نحتاج لتحديد عرض العناصر 
-                            // لنحاكي وجود 4 أعمدة في الشاشات الكبيرة (xl)
+
                             const isOffsetColumn = (index % 4 === 1 || index % 4 === 3);
 
                             return (

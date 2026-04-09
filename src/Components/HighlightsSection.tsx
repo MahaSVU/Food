@@ -7,7 +7,7 @@ interface HighlightFeature {
     title: string;
     description: string;
     shadowColor: string;
-    iconColor: string; // أضفنا لون الأيقونة المنفصل
+    iconColor: string;
 }
 
 const highlightsData: HighlightFeature[] = [
