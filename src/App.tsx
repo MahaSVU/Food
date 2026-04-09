@@ -73,6 +73,7 @@ function App() {
       <main className="min-h-screen">
         <HeroComponent />
         <HighlightsSection />
+        <UserScreensSection />
         <UserAppScreensSection
           title="User App Screens"
           subtitle="40 Mobile Crafted Screens for iPhone 11 Pro"
